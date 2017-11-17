@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Serif DrawPlus 11, 0, 0, 18 (Jul  5, 11:10:22) (http://www.serif.com) -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="794" height="559">
+	<g id="Layer_1">
+		<path id="dp_path001" fill="#ffee00" fill-rule="evenodd" stroke="#ffee00" stroke-width="1.584" d="M 399.847,209.752 L 494.248,209.488 L 494.407,274.723 L 400.007,274.985 Z "/>
+		<path id="dp_path002" fill="white" fill-rule="evenodd" fill-opacity="0" stroke="#9a9a9a" stroke-width="1.584" d="M 11.228,9.82667 L 108.111,9.82667 L 108.111,550.184 L 11.228,550.184 Z M 204.993,9.82667 L 301.877,9.82667 L 301.877,550.184 L 204.993,550.184 Z M 398.76,9.82667 L 495.643,9.82667 L 495.643,550.184 L 398.76,550.184 Z M 592.527,9.82667 L 689.409,9.82667 L 689.409,550.184 L 592.527,550.184 Z "/>
+		<path id="dp_path003" fill="white" fill-rule="evenodd" fill-opacity="0" stroke="#9a9a9a" stroke-width="1.584" d="M 783.051,6.42933 L 783.161,73.7333 L 9.90533,75.1733 L 9.79467,7.87067 Z M 783.272,141.035 L 783.38,208.337 L 10.1253,209.779 L 10.0147,142.475 Z M 783.491,275.639 L 783.601,342.943 L 10.3453,344.383 L 10.2347,277.08 Z M 783.712,410.243 L 783.82,477.545 L 10.5653,478.988 L 10.4547,411.684 Z "/>
+		<path id="dp_path004" fill="white" fill-rule="evenodd" fill-opacity="0" stroke="black" stroke-width="7.92267" d="M 11.6387,9.82533 L 784.431,9.82533 L 784.431,550.189 L 11.6387,550.189 Z "/>
+		<path id="dp_path005" fill="black" fill-rule="evenodd" stroke="black" stroke-width="1.584" d="M 182.003,252.551 L 614.444,252.551 L 614.444,267.636 L 182.003,267.636 Z "/>
+		<path id="dp_path007" fill="#448fff" fill-rule="evenodd" stroke="#448fff" stroke-width="1.584" d="M 381.627,320.756 L 419.385,301.164 L 427.701,319.351 L 389.944,338.944 Z "/>
+		<path id="dp_path008" fill="none" fill-rule="evenodd" stroke="black" stroke-width="1.584" d="M 385.487,329.301 L 422.74,309.971"/>
+		<path id="dp_path009" fill="none" fill-rule="evenodd" stroke="black" stroke-width="1.584" d="M 421.473,322.695 L 422.049,310.328"/>
+		<path id="dp_path010" fill="none" fill-rule="evenodd" stroke="black" stroke-width="1.584" d="M 412.728,305.691 L 422.053,310.069"/>
+		<g id="dp_group011">
+			<path id="dp_path012" fill="red" fill-rule="evenodd" d="M 193.848,285.684 L 606.741,285.684"/>
+			<g id="dp_group013">
+				<path id="dp_path015" fill="red" fill-rule="evenodd" d="M 209.183,287.324 L 209.183,284.049 L 209.183,277.499 L 193.848,285.687 L 209.183,293.873 Z "/>
+				<path id="dp_path016" fill="red" fill-rule="evenodd" d="M 591.407,284.045 L 591.407,287.32 L 591.407,293.869 L 606.741,285.683 L 591.407,277.496 Z "/>
+				<path id="dp_path017" fill="red" fill-rule="evenodd" d="M 209.183,287.321 L 591.407,287.321 L 591.407,284.047 L 209.183,284.047 Z "/>
+			</g>
+		</g>
+		<path id="dp_path019" fill="#068900" fill-rule="evenodd" stroke="#004e02" stroke-width="1.33333" d="M 252.791,240.776 L 240.397,260.408 L 246.595,255.5 L 246.595,306.215 L 258.987,306.215 L 258.987,255.5 L 265.184,260.408 Z "/>
+		<path id="dp_path019" fill="#068900" fill-rule="evenodd" stroke="#004e02" stroke-width="1.33333" d="M 545.283,240.776 L 532.889,260.408 L 539.087,255.5 L 539.087,306.215 L 551.479,306.215 L 551.479,255.5 L 557.676,260.408 Z "/>
+		<path id="dp_path019" fill="#068900" fill-rule="evenodd" stroke="#004e02" stroke-width="1.33333" d="M 446.567,240.115 L 434.173,259.747 L 440.371,254.839 L 440.371,305.553 L 452.763,305.553 L 452.763,254.839 L 458.96,259.747 Z "/>
+		<path id="dp_path019" fill="#068900" fill-rule="evenodd" stroke="#004e02" stroke-width="1.33333" d="M 351.489,240.776 L 339.096,260.408 L 345.293,255.5 L 345.293,306.215 L 357.685,306.215 L 357.685,255.5 L 363.883,260.408 Z "/>
+	</g>
+</svg>

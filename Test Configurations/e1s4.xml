@@ -1,0 +1,258 @@
+<?xml version = '1.0'?>
+<!DOCTYPE root [
+<!ELEMENT root (tests, environment, robot, behaviour, display)>
+<!ELEMENT tests (#PCDATA)>
+<!ELEMENT environment (polygon*)>
+<!ELEMENT polygon (vertex+)>
+<!ELEMENT vertex EMPTY>
+<!ELEMENT robot (start, moveRate, turnRate, lidarRate, noise)>
+<!ELEMENT start (vertex)>
+<!ELEMENT moveRate (#PCDATA)>
+<!ELEMENT turnRate (#PCDATA)>
+<!ELEMENT lidarRate (#PCDATA)>
+<!ELEMENT noise (#PCDATA)>
+<!ELEMENT behaviour (grid, strategy)>
+<!ELEMENT grid (startGran, minGran, split)>
+<!ELEMENT startGran (#PCDATA)>
+<!ELEMENT minGran (#PCDATA)>
+<!ELEMENT split (#PCDATA)>
+<!ELEMENT strategy (#PCDATA)>
+<!ELEMENT display (default, runtime)>
+<!ELEMENT default (robotV?, lidarV?, obstaclesV?, beaconsV?, overlayV?, collisionV?,
+detectorV?, ellipsesV?, pathV?, gridV?, mappingsV?, verticesV?, trackerV?, debugV?)>
+<!ELEMENT robotV EMPTY>
+<!ELEMENT lidarV EMPTY>
+<!ELEMENT obstaclesV EMPTY>
+<!ELEMENT beaconsV EMPTY>
+<!ELEMENT overlayV EMPTY>
+<!ELEMENT collisionV EMPTY>
+<!ELEMENT detectorV EMPTY>
+<!ELEMENT ellipsesV EMPTY>
+<!ELEMENT pathV EMPTY>
+<!ELEMENT gridV EMPTY>
+<!ELEMENT mappingssV EMPTY>
+<!ELEMENT verticesV EMPTY>
+<!ELEMENT trackerV EMPTY>
+<!ELEMENT quadrantsV EMPTY>
+<!ELEMENT seekV EMPTY>
+<!ELEMENT debugV EMPTY>
+<!ELEMENT runtime (#PCDATA)>
+
+<!ATTLIST environment width CDATA #REQUIRED>
+<!ATTLIST environment height CDATA #REQUIRED>
+<!ATTLIST polygon beacon (true|false) 'false'>
+<!ATTLIST vertex x CDATA #REQUIRED>
+<!ATTLIST vertex y CDATA #REQUIRED>
+<!ATTLIST robot width CDATA #REQUIRED>
+<!ATTLIST robot height CDATA #REQUIRED>
+<!ATTLIST display width CDATA #REQUIRED>
+<!ATTLIST display height CDATA #REQUIRED>
+]>
+<root>
+	<tests>100</tests>
+	<environment width = '50' height = '50'>
+		<!-- E -->
+		<polygon>
+			<vertex x = '7.5' y = '35' />
+			<vertex x = '8.5' y = '35' />
+			<vertex x = '8.5' y = '44' />
+			<vertex x = '7.5' y = '44' />
+		</polygon>
+		<polygon>
+			<vertex x = '8.5' y = '44'/>
+			<vertex x = '8.5' y = '43'/>
+			<vertex x = '13.5' y = '43'/>
+			<vertex x = '13.5' y = '44'/>
+		</polygon>
+		<polygon>
+			<vertex x = '8.5' y = '36'/>
+			<vertex x = '8.5' y = '35'/>
+			<vertex x = '13.5' y = '35'/>
+			<vertex x = '13.5' y = '36'/>
+		</polygon>
+		<polygon>
+			<vertex x = '8.5' y = '40'/>
+			<vertex x = '8.5' y = '39'/>
+			<vertex x = '13.5' y = '39'/>
+			<vertex x = '13.5' y = '40'/>
+		</polygon>
+		<!-- C -->
+		<polygon>
+			<vertex x = '22' y = '35' />
+			<vertex x = '23' y = '35' />
+			<vertex x = '23' y = '44' />
+			<vertex x = '22' y = '44' />
+		</polygon>
+		<polygon>
+			<vertex x = '23' y = '44'/>
+			<vertex x = '23' y = '43'/>
+			<vertex x = '28' y = '43'/>
+			<vertex x = '28' y = '44'/>
+		</polygon>
+		<polygon>
+			<vertex x = '23' y = '36'/>
+			<vertex x = '23' y = '35'/>
+			<vertex x = '28' y = '35'/>
+			<vertex x = '28' y = '36'/>
+		</polygon>
+		<!-- S -->
+		<polygon>
+			<vertex x = '36.5' y = '44'/>
+			<vertex x = '36.5' y = '43'/>
+			<vertex x = '42.5' y = '43'/>
+			<vertex x = '42.5' y = '44'/>
+		</polygon>
+		<polygon>
+			<vertex x = '36.5' y = '40'/>
+			<vertex x = '36.5' y = '39'/>
+			<vertex x = '42.5' y = '39'/>
+			<vertex x = '42.5' y = '40'/>
+		</polygon>
+		<polygon>
+			<vertex x = '36.5' y = '36'/>
+			<vertex x = '36.5' y = '35'/>
+			<vertex x = '42.5' y = '35'/>
+			<vertex x = '42.5' y = '36'/>
+		</polygon>
+		<polygon>
+			<vertex x = '36.5' y = '39.5'/>
+			<vertex x = '37.5' y = '39.5'/>
+			<vertex x = '37.5' y = '43'/>
+			<vertex x = '36.5' y = '43'/>
+		</polygon>
+		<polygon>
+			<vertex x = '41.5' y = '36'/>
+			<vertex x = '42.5' y = '36'/>
+			<vertex x = '42.5' y = '39.5'/>
+			<vertex x = '41.5' y = '39.5'/>
+		</polygon>
+		<!-- Dolphin -->
+		<polygon beacon = 'true'>
+			<vertex x = '25.24' y = '22' />
+			<vertex x = '25.24' y = '23' />
+			<vertex x = '27.24' y = '23' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '22.42' y = '23' />
+			<vertex x = '25.24' y = '23' />
+			<vertex x = '23.82' y = '24.42' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '21' y = '24.42' />
+			<vertex x = '22.42' y = '23' />
+			<vertex x = '23.82' y = '24.42' />
+			<vertex x = '22.42' y = '25.82' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '22.42' y = '25.8' />
+			<vertex x = '28.03' y = '25.8' />
+			<vertex x = '25.24' y = '23' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '25.24' y = '23' />
+			<vertex x = '30.88' y = '23' />
+			<vertex x = '28' y = '25.82' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '21' y = '24.42' />
+			<vertex x = '22.42' y = '25.82' />
+			<vertex x = '22.42' y = '28.66' />
+			<vertex x = '21' y = '27.42' />
+		</polygon>
+		<polygon beacon = 'true'>
+			<vertex x = '18' y = '27.42' />
+			<vertex x = '21' y = '24.42' />
+			<vertex x = '22' y = '27.42' />
+		</polygon>
+		<!-- Random obstacles -->
+		<polygon>
+			<vertex x = '47' y = '0' />
+			<vertex x = '50' y = '0' />
+			<vertex x = '50' y = '3' />
+		</polygon>
+		<polygon>
+			<vertex x = '0' y = '15' />
+			<vertex x = '1' y = '18' />
+			<vertex x = '1' y = '32' />
+			<vertex x = '0' y = '35' />
+		</polygon>
+		<polygon>
+			<vertex x = '20' y = '15' />
+			<vertex x = '30' y = '15' />
+			<vertex x = '30' y = '16' />
+			<vertex x = '20' y = '16' />
+		</polygon>
+		<polygon>
+			<vertex x = '20' y = '15' />
+			<vertex x = '20' y = '16' />
+			<vertex x = '17' y = '18' />
+			<vertex x = '17' y = '17' />
+		</polygon>
+		<polygon>
+			<vertex x = '20' y = '15' />
+			<vertex x = '30' y = '15' />
+			<vertex x = '30' y = '16' />
+			<vertex x = '20' y = '16' />
+		</polygon>
+		<polygon>
+			<vertex x = '35' y = '20' />
+			<vertex x = '36' y = '20' />
+			<vertex x = '36' y = '30' />
+			<vertex x = '35' y = '30' />
+		</polygon>
+		<polygon>
+			<vertex x = '0' y = '10' />
+			<vertex x = '0' y = '11' />
+			<vertex x = '7' y = '11' />
+			<vertex x = '7' y = '10' />
+		</polygon>
+		<polygon>
+			<vertex x = '27' y = '0' />
+			<vertex x = '28' y = '0' />
+			<vertex x = '28' y = '5' />
+			<vertex x = '27' y = '5' />
+		</polygon>
+		<polygon>
+			<vertex x = '37' y = '7' />
+			<vertex x = '38' y = '7' />
+			<vertex x = '38' y = '10' />
+			<vertex x = '37' y = '10' />
+		</polygon>
+		<polygon>
+			<vertex x = '38' y = '9' />
+			<vertex x = '38' y = '8' />
+			<vertex x = '42' y = '8' />
+			<vertex x = '42' y = '9' />
+		</polygon>
+	</environment>
+	<robot width = '1' height = '2'>
+		<start>
+			<vertex x = '5' y = '5'/>
+		</start>
+		<moveRate>10</moveRate>
+		<turnRate>200</turnRate>
+		<lidarRate>720</lidarRate>
+		<noise>0.01</noise>
+	</robot>
+	<behaviour>
+		<grid>
+			<startGran>2</startGran>
+			<minGran>0.4</minGran>
+			<split>0.75</split>
+		</grid>
+		<strategy>4</strategy>
+	</behaviour>
+	<display width = '940' height = '940'>
+		<default>
+			<robotV />
+			<lidarV />
+			<obstaclesV />
+			<beaconsV />
+			<pathV />
+			<gridV />
+			<quadrantsV />
+			<seekV />
+		</default>
+		<runtime>120</runtime>
+	</display>
+</root>
